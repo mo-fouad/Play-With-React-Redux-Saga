@@ -12,7 +12,7 @@ export const Dashboard = ( {groups} ) => (
         <h2>DashBoard</h2>
         {
             groups.map( (group) => (
-                <ConnectedTaskList id={group.id} name={groups.name}   />
+                <ConnectedTaskList key={group.id} id={group.id} name={groups.name}   />
             ))
         }
     </div>
